@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    border-radius: 0.5rem;
+    width: 818px;
+    height: 415px;
+    display: flex;
+    position: relative;
+}
+
+main div {
+    padding: 2rem;
+}
+
+main div h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 38px;
+}
+
+main div p {
+    font-family: 'Lexend Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 3rem;
+    font-size: 15px;
+}
+
+main div a {
+    font-family: 'Lexend Deca', sans-serif; 
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    padding: 0.6rem 1.1rem 0.6rem 1.1rem;
+    font-size: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+#first {
+    color: hsl(31, 77%, 52%);
+}
+#first:hover {
+    color: hsl(0, 0%, 95%);
+}
+#second {
+    color: hsl(184, 100%, 22%);
+}
+#second:hover {
+    color: hsl(0, 0%, 95%);
+}
+#third {
+    color: hsl(179, 100%, 13%);
+}
+#third:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+
+main div:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+main div:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+main div:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+main div a:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px) {
+
+    body {
+        height: auto;
+    }
+    
+    main {
+        flex-direction: column;
+        margin: 3rem 1rem 3rem 1rem;
+        align-items: start;
+        justify-content: start;
+    }
+
+    main div {
+        padding: 2rem 4.6rem 2rem 2rem;
+    }
+
+    main div:nth-child(1){
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    main div:nth-child(2) {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    main div:nth-child(3) {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    main div p {
+        margin-bottom: 5rem;
+    }
+
+    main div a {
+        position: relative;
+    }
+}
